@@ -17,7 +17,10 @@
     </header>
     <!--FORMULARIO USUARIO-->
     <main>
-        <form action="#">
+        <div>
+            <p id= "error"></p>
+        </div>
+        <form action="juego.html" id="formEntrada">
             <div class="itemform">
                 <label for="nick">introduce tu nick</label>
                 <input type="text" name="nick" value="@" id="nicka" readonly />
@@ -26,20 +29,20 @@
               </div>
               <div class="itemform">
                 <label for="correo"> correo electrónico </label>
-                <input type="email" name="correo" id="correo" pattern=".+@example\.com" size="30" required>
+                <input type="email" name="correo" id="correo" size="30" >
 
               </div>
               <div class="itemform">
-                <label for="nick">Tamaño del juego: </label>
+                <label for="tamano">Tamaño del juego: </label>
                 <select name="tamano" id="tamano">
-                    <option value="">--Por favor, elija un tamaño--</option>
+                    <option value="0">--Por favor, elija un tamaño--</option>
                     <option value="1">4x4</option>
                     <option value="2">5x5</option>
                     <option value="3">6x6</option>
                 </select>
               </div>
               <div class="itemform">
-                <input type="submit" value="JUGAR!" />
+                <input type="submit" value="JUGAR!" id="jugar" />
               </div>
         </form>
     </main>
@@ -47,6 +50,7 @@
     <footer>
         <p>Curso FrontEnd HTML, CSS y Js</p>
     </footer>
-    
+    <!-- EL CODIGO JS-->
+    <script src="./js/app.js"></script>
 </body>
 </html>

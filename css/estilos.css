@@ -64,3 +64,12 @@ select{
     width: 100%;
     border-radius: 5px;
 }
+#error{
+    text-align: center;
+    color: #fd0c49;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
